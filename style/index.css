@@ -45,12 +45,13 @@ header h1 {
     position: relative;
     text-align: center;
     color: white;
-    margin: 3%;
+    margin: 3% 0;
 }
 
 .hero-container div a {
     background-color: rgba(112, 128, 144, .5);
     color: white;
+    padding: 10px;
 }
 
 .hero-container div a:hover {
@@ -71,42 +72,25 @@ header h1 {
     width: 100%;
 }
 
-.portfolio-l1 {
+.portfolio {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.portfolio-l1 div {
+.portfolio div {
     font-size: .75rem;
     text-align: center;
-    margin: 2%;
     color: #46515C;
+    width: 30%;
+    margin-bottom: 2%;
 }
 
-.portfolio-l1 div img:hover {
-    border: 2px solid white;
-}
-.portfolio-l2 div {
-    font-size: .75rem;
-    text-align: center;
-    margin:2%;
-    color: #46515C;
-}
-
-.portfolio-l2 div img:hover {
+.portfolio div img:hover {
     border: 2px solid white;
 }
 
-.portfolio-l1 div p {
+.portfolio div p {
     margin-top: 3%;
-}
-
-.portfolio-l2 div p {
-    margin-top: 3%;
-}
-
-.portfolio-l2 {
-    display: flex;
-    justify-content: center;
 }
 
 footer {
@@ -146,4 +130,24 @@ footer div {
         /* border: 1px solid pink; */
     }
     
+}
+
+@media (max-width: 500px) {
+    .portfolio div {
+        width: 45%;
+    }
+
+    #hero {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+
+    .hero-container div h1 {
+        font-size: 3rem;
+    }
+
+    .hero-container div h2 {
+        font-size: 1rem;
+    }
 }
